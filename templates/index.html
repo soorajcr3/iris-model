@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>Iris web</title><style>
+    div {text-align: center;font-size: 18px;}
+    body {
+      background-image: url("/workspaces/iris-model/static/image/572116.jpg");
+      background-attachment: fixed;  
+      background-size: cover;
+      
+    }
+    h1{text-align:center;}
+    </style>
+</head>
+<body>
+<div class="login">
+<h1>IRIS SPECIES FINDER</h1>
+<br>
+<br>
+
+
+<form action="{{ url_for('predict')}}"method="post">
+<input type="text" name="SepalLength" placeholder="SepalLength" required="required"/>
+<input type="text" name="SepalWidth" placeholder="SepalWidth" required="required" />
+<input type="text" name="PetalLength" placeholder="PetalLength" required="required" />
+<input type="text" name="PetalWidth" placeholder="PetalWidth" required="required" />
+<br>
+<br>
+
+<button id="submit" type="submit">Submit</button>
+</form>
+<br>
+<br>
+
+</div>
+</body>
+</html>
