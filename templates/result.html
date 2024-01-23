@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Iris web</title>
+    <link rel="stylesheet" href="/workspaces/iris-model/static/css/col.css">
+    <style>
+        div {text-align: center;font-size: 120px;}
+        body {
+          background-image: url("/static/images/background3.jpg");
+          background-attachment: fixed;
+          background-size: cover;
+
+        }
+        h2{text-align:center;}
+        </style>
+</head>
+<body background="/workspaces/iris-model/static/image/572116.jpg"background-attachment: fixed;
+background-size: cover;>
+    <h2 id="result">{{prediction_text}}</h2>
+           <div>
+            <a href="{{url_for('home')}}">
+                <button  id="home" >Back</button>
+            </a>
+           </div>
+</body>
+</html>
